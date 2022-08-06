@@ -49,8 +49,8 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/storefront/",
-              "deployUrl": "/storefront/",
+              "baseHref": "/",
+              "deployUrl": "/",
               "budgets": [
                 {
                   "type": "anyComponentStyle",
