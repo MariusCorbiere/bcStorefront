@@ -14,7 +14,8 @@
     @include media-breakpoint-up(sm) {
         display: block;
         .nav-wrapper {
-            @include make-container-max-widths();
+            /* -DC- Remove deprecated if bootstrap 5 */
+						/* @include make-container-max-widths(); */
             width: 100%;
             margin: auto;
         }

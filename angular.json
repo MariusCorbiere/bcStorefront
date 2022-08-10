@@ -10,10 +10,11 @@
       "prefix": "vsf",
       "schematics": {},
 			"i18n": {
-				"sourceLocale": "en-US",
+				"sourceLocale": "en",
 				"locales": {
 					"fr": {
-						"translation": "src/locale/messages.fr.json"
+						"translation": "src/locale/messages.fr.json",
+						"baseHref": "fr/"
 					}
 				}
 			},
@@ -21,7 +22,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-						"localize": ["fr"],
+						"localize": ["en", "fr"],
             "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
