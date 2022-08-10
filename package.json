@@ -51,6 +51,7 @@
     "@angular/cli": "^13.3.6",
     "@angular/compiler-cli": "^13.3.9",
     "@angular/language-service": "^13.3.9",
+    "@angular/localize": "^13.3.11",
     "@graphql-codegen/add": "^2.0.1",
     "@graphql-codegen/cli": "^1.13.2",
     "@graphql-codegen/fragment-matcher": "^1.17.8",

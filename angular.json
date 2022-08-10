@@ -9,10 +9,19 @@
       "projectType": "application",
       "prefix": "vsf",
       "schematics": {},
+			"i18n": {
+				"sourceLocale": "en-US",
+				"locales": {
+					"fr": {
+						"translation": "src/locale/messages.fr.json"
+					}
+				}
+			},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+						"localize": ["fr"],
             "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
