@@ -12,7 +12,7 @@
     "generate-types": "gql-gen --config codegen.yml",
     "dev:ssr": "ng run reference-storefront:serve-ssr",
     "serve:ssr": "node dist/server/main.js",
-    "build:ssr": "ng build --prod && ng run reference-storefront:server:production",
+    "build:ssr": "ng build --configuration production && ng run reference-storefront:server:production",
     "build:ssr:docker": "ng build --configuration=production,docker && ng run reference-storefront:server:docker",
     "prerender": "ng run reference-storefront:prerender"
   },
@@ -47,8 +47,8 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~13.3.6",
-    "@angular/cli": "^13.3.6",
+    "@angular-devkit/build-angular": "^14.1.1",
+    "@angular/cli": "^14.1.1",
     "@angular/compiler-cli": "^14.1.1",
     "@angular/language-service": "^14.1.1",
     "@angular/localize": "^14.1.1",
@@ -74,7 +74,7 @@
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^13.3.1",
+    "ng-packagr": "^14.1.0",
     "ts-loader": "^8.0.4",
     "ts-node": "~9.0.0",
     "tslint": "~6.1.0",

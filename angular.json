@@ -204,7 +204,6 @@
       }
     }
   },
-  "defaultProject": "reference-storefront",
   "schematics": {
     "@schematics/angular:component": {
       "style": "scss",
