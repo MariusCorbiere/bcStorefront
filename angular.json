@@ -22,7 +22,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-						"localize": ["en", "fr"],
+						"localize": true,
             "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -58,6 +58,12 @@
             "namedChunks": true
           },
           "configurations": {
+						"en": {
+							"localize": ["en"],
+						},
+						"fr": {
+							"localize": ["fr"],
+						},
             "production": {
               "baseHref": "/",
               "budgets": [
@@ -100,7 +106,13 @@
           "configurations": {
             "production": {
               "browserTarget": "reference-storefront:build:production"
-            }
+            },
+						"en": {
+							"browserTarget": "reference-storefront:build:en"
+						},
+						"fr": {
+							"browserTarget": "reference-storefront:build:fr"
+						}
           }
         },
         "extract-i18n": {
