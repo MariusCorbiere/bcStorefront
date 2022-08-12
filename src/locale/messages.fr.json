@@ -1,7 +1,7 @@
 {
-  "locale": "fr-FR",
+  "locale": "fr",
   "translations": {
-    "6575195871133210332": "Commandes",
-    "1726363342938046830": "À propos"
+    "Orders": "Commandes",
+    "About": "À propos"
   }
 }
