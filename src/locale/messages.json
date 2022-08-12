@@ -1,7 +1,8 @@
 {
   "locale": "en",
   "translations": {
-    "Orders": "Orders",
-    "About": "About"
+    "orders": "Orders",
+    "about": "About",
+    "search": "Search..."
   }
 }

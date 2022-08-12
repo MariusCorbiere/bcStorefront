@@ -1,7 +1,8 @@
 {
   "locale": "fr",
   "translations": {
-    "Orders": "Commandes",
-    "About": "À propos"
+    "orders": "Commandes",
+    "about": "À propos",
+    "search": "Search..."
   }
 }
