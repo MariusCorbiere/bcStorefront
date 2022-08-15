@@ -3,6 +3,7 @@ import { Route } from '@angular/router';
 import { ProductDetailComponent } from './core/components/product-detail/product-detail.component';
 import { ProductListComponent } from './core/components/product-list/product-list.component';
 import { TermsAndConditionsComponent } from './core/components/terms-and-conditions/terms-and-conditions.component';
+import { StorytellingComponent } from './core/components/storytelling/storytelling.component';
 
 export const routes: Route[] = [
     {
@@ -21,6 +22,10 @@ export const routes: Route[] = [
     {
         path: 'terms-and-conditions',
         component: TermsAndConditionsComponent,
+    },
+    {
+        path: 'storytelling',
+        component: StorytellingComponent,
     },
     {
         path: 'account',

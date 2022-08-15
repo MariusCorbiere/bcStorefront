@@ -14,6 +14,7 @@ import { SharedModule } from './shared/shared.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './core/components/home-page/home-page.component';
 import { TermsAndConditionsComponent } from './core/components/terms-and-conditions/terms-and-conditions.component';
+import { StorytellingComponent } from './core/components/storytelling/storytelling.component';
 
 const STATE_KEY = makeStateKey<any>('apollo.state');
 
@@ -22,6 +23,7 @@ const STATE_KEY = makeStateKey<any>('apollo.state');
         AppComponent,
         HomePageComponent,
         TermsAndConditionsComponent,
+        StorytellingComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({appId: 'serverApp'}),
