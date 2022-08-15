@@ -2,6 +2,7 @@
   "locale": "fr",
   "translations": {
     "orders": "Commandes",
+    "terms-and-conditions": "Conditions générales de vente",
     "about": "À propos",
     "search": "Recherche..."
   }

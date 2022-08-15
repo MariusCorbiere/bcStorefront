@@ -1,17 +1,19 @@
 import { DOCUMENT } from '@angular/common';
 import { Inject, NgModule } from '@angular/core';
-import { BrowserModule, BrowserTransferStateModule, makeStateKey, TransferState } from '@angular/platform-browser';
+import { BrowserModule, makeStateKey, TransferState } from '@angular/platform-browser';
 import { NavigationEnd, Router, RouterModule, UrlSerializer } from '@angular/router';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { filter } from 'rxjs/operators';
 
 import { environment } from '../environments/environment';
 
-import { AppComponent } from './app.component';
 import { routes } from './app.routes';
-import { HomePageComponent } from './core/components/home-page/home-page.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+
+import { AppComponent } from './app.component';
+import { HomePageComponent } from './core/components/home-page/home-page.component';
+import { TermsAndConditionsComponent } from './core/components/terms-and-conditions/terms-and-conditions.component';
 
 const STATE_KEY = makeStateKey<any>('apollo.state');
 
@@ -19,10 +21,10 @@ const STATE_KEY = makeStateKey<any>('apollo.state');
     declarations: [
         AppComponent,
         HomePageComponent,
+        TermsAndConditionsComponent,
     ],
     imports: [
         BrowserModule.withServerTransition({appId: 'serverApp'}),
-        BrowserTransferStateModule,
         RouterModule.forRoot(routes, { scrollPositionRestoration: 'disabled', initialNavigation: 'enabledBlocking', relativeLinkResolution: 'legacy' }),
         CoreModule,
         SharedModule,

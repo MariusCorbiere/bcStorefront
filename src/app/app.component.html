@@ -25,20 +25,19 @@
     </div>
 
     <vsf-layout-footer>
-        <div class="row text-muted mt-5 mb-5">
+        <div class="row text-muted mt-2 mb-2">
             <div class="col-md-4 text-center text-md-left">
                 <h3 i18n="@@orders">Orders</h3>
                 <ul class="list-unstyled">
                     <li>Shipping</li>
                     <li>Track My Order</li>
-                    <li>Terms & Conditions</li>
-                    <li>Returns Policy</li>
+                    <li><a [routerLink]="['/terms-and-conditions/']" i18n="@@terms-and-conditions">Terms & Conditions</a></li>
                 </ul>
             </div>
             <div class="col-md-4 text-center text-md-left">
                 <h3 i18n="@@about">About</h3>
                 <ul class="list-unstyled">
-                    <li>About Us</li>
+                    <li><a [routerLink]="['/storytelling/']" i18n="@@storytelling">Storytelling</a></li>
                     <li>Contact Us</li>
                     <li>Privacy Notice</li>
                 </ul>
