@@ -1,5 +1,10 @@
 <div class="container">
 	<h3 class="display-4 mt-5" i18n="@@terms-and-conditions">Terms & Conditions</h3>
 	<p>Locale id is: {{locale}}</p>
-	<p>Para 2</p>
+	<ng-container *ngIf="locale=='fr'">
+		<p>Para fr</p>
+	</ng-container>
+	<ng-container *ngIf="locale=='en'">
+		<p>Para en</p>
+	</ng-container>
 </div>
