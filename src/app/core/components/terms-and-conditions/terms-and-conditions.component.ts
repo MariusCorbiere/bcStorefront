@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
 
 @Component({
   selector: 'vsf-terms-and-conditions',
@@ -7,8 +7,7 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TermsAndConditionsComponent implements OnInit {
-
-  constructor() { }
+  constructor(@Inject(LOCALE_ID) public locale: string) { }
 
   ngOnInit(): void {
   }
