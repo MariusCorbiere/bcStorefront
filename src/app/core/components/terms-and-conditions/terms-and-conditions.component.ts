@@ -7,6 +7,7 @@ import { ChangeDetectionStrategy, Component, OnInit, LOCALE_ID, Inject } from '@
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TermsAndConditionsComponent implements OnInit {
+
   constructor(@Inject(LOCALE_ID) public locale: string) { }
 
   ngOnInit(): void {
