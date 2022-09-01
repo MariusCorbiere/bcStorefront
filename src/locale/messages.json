@@ -1,6 +1,7 @@
 {
   "locale": "en",
   "translations": {
+    "Check your email address": "Please check your email ({$PH}) to complete the process",
     "Verify email address": "Verify email address",
     "New email address verified": "New email address verified",
     "Cannot verify email address": "Cannot verify email address",
