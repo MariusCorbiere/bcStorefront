@@ -1,7 +1,7 @@
 {
   "locale": "fr",
   "translations": {
-    "Check your email address": "Veuillez vérifier votre e-mail ({$PH}) pour terminer le processus",
+    "Check your mailbox to complete the process": "Veuillez vérifier votre boite mail ({$PH}) pour terminer le processus",
     "Verify email address": "Vérification de l'adresse mail",
     "New email address verified": "Nouvelle adresse mail vérifiée",
     "Cannot verify email address": "Impossible de vérifier l'adresse mail",
