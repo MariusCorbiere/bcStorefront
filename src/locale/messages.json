@@ -1,6 +1,9 @@
 {
   "locale": "en",
   "translations": {
+    "Verify email address": "Verify email address",
+    "New email address verified": "New email address verified",
+    "Cannot verify email address": "Cannot verify email address",
     "orders": "Orders",
     "terms-and-conditions": "Terms & Conditions",
     "about": "About",

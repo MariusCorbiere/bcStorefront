@@ -1,6 +1,9 @@
 {
   "locale": "fr",
   "translations": {
+    "Verify email address": "Vérification de l'adresse mail",
+    "New email address verified": "Nouvelle adresse mail vérifiée",
+    "Cannot verify email address": "Impossible de vérifier l'adresse mail",
     "orders": "Commandes",
     "terms-and-conditions": "Conditions générales de vente",
     "storytelling": "Storytelling - La marque",
