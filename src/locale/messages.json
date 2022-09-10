@@ -1,0 +1,16 @@
+{
+  "locale": "en",
+  "translations": {
+    "Check your mailbox to complete the process": "Please check your mailbox ({$PH}) to complete the process",
+    "Verify email address": "Verify email address",
+    "New email address verified": "New email address verified",
+    "Cannot verify email address": "Cannot verify email address",
+    "orders": "Orders",
+    "terms-and-conditions": "Terms & Conditions",
+    "about": "About",
+    "storytelling": "Storytelling",
+    "top-sellers": "Top Sellers",
+    "page-not-found": "Page not found",
+    "search": "Search..."
+  }
+}

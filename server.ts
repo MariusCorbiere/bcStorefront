@@ -1,3 +1,7 @@
+/***************************************************************************************************
+ * Load `$localize` onto the global scope - used if i18n tags appear in Angular templates.
+ */
+import '@angular/localize/init';
 import { APP_BASE_HREF } from '@angular/common';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import * as express from 'express';
@@ -8,10 +12,10 @@ import 'zone.js/node';
 import { AppServerModule } from './src/main.server';
 
 // The Express app is exported so that it can be used by serverless Functions.
-export function app() {
+export function app(lang: string) {
     const server = express();
 
-    const distFolder = join(process.cwd(), 'dist/browser');
+    const distFolder = join(process.cwd(), `dist/browser/${lang}`);
     const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
     // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
@@ -38,10 +42,16 @@ export function app() {
 }
 
 function run() {
-    const port = 4000;
+		const port = process.env.PORT || 3002;
+
+		const appFr = app('fr');
+  	const appEn = app('en');
 
     // Start up the Node server
-    const server = app();
+    const server = express();
+		server.use('/fr', appFr);
+		server.use('/en', appEn);
+		server.use('', appFr); // Default
     server.listen(port, () => {
         console.log(`Node Express server listening on http://localhost:${port}`);
     });

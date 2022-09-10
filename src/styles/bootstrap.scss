@@ -6,9 +6,9 @@ $breadcrumb-margin-bottom: 0 !default;
 $primary: #0c96a0;
 $link-hover-color: #1c7d92;
 $link-hover-decoration: underline solid #6898bd;
-$border-radius: .1rem;
-$border-radius-lg: .2rem;
-$border-radius-sm: .05rem;
+$border-radius: .2rem;
+$border-radius-lg: .4rem;
+$border-radius-sm: .1rem;
 $breadcrumb-divider: quote("/");
 $breadcrumb-bg: transparent;
 $breadcrumb-padding-x: 0;
@@ -16,8 +16,13 @@ $breadcrumb-padding-x: 0;
 // $font-family-base: 'Montserrat', sans-serif;
 $headings-font-family: 'Didact Gothic', serif;
 
+// -DC- Error patch: .custom-file-input:lang(en)~.custom-file-label -> unmatched pseudo-class :lan
+//$custom-file-text: ();
+
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
+// -DC- Add maps after variables
+// @import "../../node_modules/bootstrap/scss/maps";
 @import "../../node_modules/bootstrap/scss/mixins";
 
 @import "../../node_modules/bootstrap/scss/root";
@@ -32,7 +37,9 @@ $headings-font-family: 'Didact Gothic', serif;
 @import "../../node_modules/bootstrap/scss/transitions";
 // @import "../../node_modules/bootstrap/scss/dropdown";
 @import "../../node_modules/bootstrap/scss/button-group";
+// -DC- remove missing
 @import "../../node_modules/bootstrap/scss/input-group";
+// -DC- remove missing
 @import "../../node_modules/bootstrap/scss/custom-forms";
 @import "../../node_modules/bootstrap/scss/nav";
 @import "../../node_modules/bootstrap/scss/navbar";
@@ -40,9 +47,11 @@ $headings-font-family: 'Didact Gothic', serif;
 @import "../../node_modules/bootstrap/scss/breadcrumb";
 @import "../../node_modules/bootstrap/scss/pagination";
 @import "../../node_modules/bootstrap/scss/badge";
+// -DC- remove missing
 @import "../../node_modules/bootstrap/scss/jumbotron";
 @import "../../node_modules/bootstrap/scss/alert";
 @import "../../node_modules/bootstrap/scss/progress";
+// -DC- remove missing
 @import "../../node_modules/bootstrap/scss/media";
 @import "../../node_modules/bootstrap/scss/list-group";
 @import "../../node_modules/bootstrap/scss/close";
@@ -53,4 +62,5 @@ $headings-font-family: 'Didact Gothic', serif;
 // @import "../../node_modules/bootstrap/scss/carousel";
 @import "../../node_modules/bootstrap/scss/spinners";
 @import "../../node_modules/bootstrap/scss/utilities";
+// -DC- remove missing
 @import "../../node_modules/bootstrap/scss/print";

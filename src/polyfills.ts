@@ -1,3 +1,7 @@
+/***************************************************************************************************
+ * Load `$localize` onto the global scope - used if i18n tags appear in Angular templates.
+ */
+import '@angular/localize/init';
 /**
  * Web Animations `@angular/platform-browser/animations`
  * Only required if AnimationBuilder is used within the application and using IE/Edge or Safari.

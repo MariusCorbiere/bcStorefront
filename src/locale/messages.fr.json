@@ -1,0 +1,16 @@
+{
+  "locale": "fr",
+  "translations": {
+    "Check your mailbox to complete the process": "Veuillez vérifier votre boite mail ({$PH}) pour terminer le processus",
+    "Verify email address": "Vérification de l'adresse mail",
+    "New email address verified": "Nouvelle adresse mail vérifiée",
+    "Cannot verify email address": "Impossible de vérifier l'adresse mail",
+    "orders": "Commandes",
+    "terms-and-conditions": "Conditions générales de vente",
+    "storytelling": "Storytelling - La marque",
+    "top-sellers": "Meilleures ventes",
+    "about": "À propos",
+    "page-not-found": "Page non trouvée",
+    "search": "Recherche..."
+  }
+}
